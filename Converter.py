@@ -203,29 +203,3 @@ for subdir, dirs, files in os.walk(rootdir):
                 writeFile.write("\n")
 
             writeFile.close()
-
-
-
-
-            """Code archive
-
-            #skip staff 2, have to work that in later
-              if(music[endNote+14 : endNote+22] == "<backup>"):
-                nextMeasure = music.find("<measure", endNote+1)
-                beginNote = music.find("<note", nextMeasure)
-                endNote = music.find("</note", nextMeasure)
-              else:
-                beginNote = music.find("<note", endNote+1)
-                endNote = music.find("</note", endNote+1)
-
-
-            #if going into staff 2 switch voice
-              if(music[endNote+14 : endNote+22] == "<backup>"):
-                currentVoice = 2
-              #if exiting staff 2 switch voice
-              if("measu" in music[beginNote-50: beginNote-(25)]):
-                currentVoice = 1
-            beginNote = music.find("<note", endNote+1)
-            endNote = music.find("</note", endNote+1)
-
-            """
